@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            background-color: papayawhip;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .card{
+            position: absolute;
+            top: calc(50% - 40px);
+            width: 300px;
+            height: 400px;
+            background-color: whitesmoke;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+            box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2) ;
+        }
+        .back-image{
+            width: 100%;
+            height: 30%;
+            background-color: #272727;
+        }
+        .profile{
+            width: 150px;
+            height: 150px;
+            top: calc(50% - 160px);
+            border: 2px solid #272727;
+            left: calc(50% - 80px);
+            position: absolute;
+            border-radius: 50%;
+            background-image: url(https://static.platzi.com/media/avatars/avatars/Hector27_a38de428-4f18-498a-bd86-cf3abad53162.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .name{
+            margin-top: 75px;
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: 300;
+        }
+        .about-me{
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 100;
+            color: #787A91;
+        }
+        .social-media{
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: 1px solid #787A91; 
+            margin-top: 50px;
+        }
+        .social-media p:nth-child(1){
+            width: 100%;
+            height: 100%;
+            background-color: #00acee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-media p:nth-child(2){
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-media p:nth-child(3){
+            width: 100%;
+            height: 100%;
+            background-color: #0288d1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-media .tw-logo{
+            width: 24px;
+            height: 24px;
+            background-image: url(./assets/icons/icons8-twitter.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .social-media .gh-logo{
+            width: 30px;
+            height: 30px;
+            background-image: url(./assets/icons/icons8-github\ \(3\).svg);
+            color: #fff;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .social-media .li-logo{
+            width: 30px;
+            height: 30px;
+            background-image: url(./assets/icons/icons8-linkedin.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .card .contact{
+            background-color: #272727;
+            color: #fff;
+            font-weight: 600;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 53px;
+            text-decoration: none;
+        }
+        </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="back-image"></div>
+            <div class="profile"></div>
+            <p class="name">Héctor Galindo</p>
+            <P class="about-me">Frontend Developer</P>
+            <div class="social-media">
+                <p><a class="tw-logo" href="#"></a></p>
+                <p><a class="gh-logo" href="#"></a></p>
+                <p><a class="li-logo" href="#"></a></p>
+            </div>
+            <a class="contact" href="#"><p> contact me</p></a>
+        </div>
+    </section>
+</body>
+</html>
