@@ -21,6 +21,9 @@
             justify-content: center;
             position: relative;
         }
+        html{
+            font-size: 62.5%;
+        }
         .card{
             position: absolute;
             top: calc(50% - 40px);
@@ -51,12 +54,12 @@
         }
         .name{
             margin-top: 75px;
-            font-size: 1.8rem;
+            font-size: 2.5rem;
             text-align: center;
             font-weight: 300;
         }
         .about-me{
-            font-size: 1rem;
+            font-size: 1.5rem;
             text-align: center;
             font-weight: 100;
             color: #787A91;
@@ -132,13 +135,18 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 60px;
+            height: 12%;
+            font-size: 1.7rem;
             position: relative;
             text-decoration: none;
         }
-        .card .contact p{
-            margin-top: 2px;
-            margin-bottom: 10px;
+        .card .contact .mail-icon{
+            width: 25px;
+            height: 20px;
+            background-image: url(./assets/icons/email_white_24dp.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         </style>
 </head>
@@ -155,7 +163,7 @@
                 <p><a class="li-logo" target="_blank" href="https://www.linkedin.com/in/hecgph"></a></p>
             </div>
             <div class="conta">
-                <a class="contact" href="mailto:hec.gph@gmail.com"><p> contact me</p></a>
+                <a class="contact" href="mailto:hec.gph@gmail.com"><p class="mail-icon"></p></a>
             </div>
         </div>
     </section>
