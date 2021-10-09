@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Card</title>
+    <title>HectorGalindo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
             position: absolute;
             top: calc(50% - 40px);
             width: 300px;
-            height: 400px;
+            height: 430px;
             background-color: whitesmoke;
             overflow: hidden;
             position: relative;
@@ -64,13 +64,34 @@
             font-weight: 100;
             color: #787A91;
         }
+        .location--icon{
+            width: 100%;
+            height: 50px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .location--icon::before{
+            width: 20px;
+            height: 20px;
+            margin-right: 2px;
+            content: "";
+            background-image: url(./assets/icons/place_black_24dp.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .location p{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
         .social-media{
             width: 100%;
             height: 50px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             border-bottom: 1px solid #787A91; 
-            margin-top: 50px;
         }
         .social-media p:nth-child(1){
             width: 100%;
@@ -165,6 +186,7 @@
             <div class="profile"></div>
             <p class="name">Héctor Galindo</p>
             <P class="about-me">Frontend Developer</P>
+            <div class="location"><p class="location--icon">Colombia</p></div>
             <div class="social-media">
                 <p><a class="tw-logo" target="_blank" href="https://twitter.com/hecgph"></a></p>
                 <p><a class="gh-logo" target="_blank" href="https://github.com/HectorGalindoPedraza"></a></p>
