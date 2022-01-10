@@ -11,184 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap"
       rel="stylesheet"
     />
-    <style>
-        *{
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-        }
-        body{
-            background-color: papayawhip;
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-        html{
-            font-size: 62.5%;
-        }
-        .card{
-            position: absolute;
-            top: calc(50% - 40px);
-            width: 300px;
-            height: 430px;
-            background-color: whitesmoke;
-            overflow: hidden;
-            position: relative;
-            border-radius: 15px;
-            box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2) ;
-        }
-        .back-image{
-            width: 100%;
-            height: 30%;
-            background-color: #272727;
-        }
-        .profile{
-            width: 150px;
-            height: 150px;
-            top: calc(50% - 160px);
-            border: 2px solid #272727;
-            left: calc(50% - 80px);
-            position: absolute;
-            border-radius: 50%;
-            background-image: url(https://static.platzi.com/media/avatars/avatars/Hector27_a38de428-4f18-498a-bd86-cf3abad53162.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            object-fit: cover;
-            background-size: contain;
-        }
-        .name{
-            margin-top: 75px;
-            font-size: 2.5rem;
-            text-align: center;
-            font-weight: 300;
-        }
-        .about-me{
-            font-size: 1.5rem;
-            text-align: center;
-            font-weight: 100;
-            color: #787A91;
-        }
-        .location--icon{
-            width: 100%;
-            height: 50px;
-            margin-top: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .location--icon::before{
-            width: 20px;
-            height: 20px;
-            margin-right: 2px;
-            content: "";
-            background-image: url(./assets/icons/place_black_24dp.svg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .location p{
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        .social-media{
-            width: 100%;
-            height: 50px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            border-bottom: 1px solid #787A91; 
-        }
-        .social-media p:nth-child(1){
-            width: 100%;
-            height: 100%;
-            background-color: #00acee;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .social-media p:nth-child(1):hover{
-            background-color: #0090c9;
-        }
-        .social-media p:nth-child(2){
-            width: 100%;
-            height: 100%;
-            background-color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .social-media p:nth-child(2):hover{
-            background-color: #222;
-        }
-        .social-media p:nth-child(3){
-            width: 100%;
-            height: 100%;
-            background-color: #0288d1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .social-media p:nth-child(3):hover{
-            background-color: #0073b1;
-        }
-        .social-media .tw-logo{
-            width: 24px;
-            height: 24px;
-            background-image: url(./assets/icons/icons8-twitter.svg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .social-media .gh-logo{
-            width: 30px;
-            height: 30px;
-            background-image: url(./assets/icons/icon-github.svg);
-            color: #fff;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .social-media .li-logo{
-            width: 30px;
-            height: 30px;
-            background-image: url(./assets/icons/icons8-linkedin.svg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .conta{
-            width: 100%;
-            height: 100%;
-            background-color: #272727;
-        }
-        .card .contact{
-            background-color: #272727;
-            color: #fff;
-            font-weight: 600;
-            display: inline-block;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 14.4%;
-            position: relative;
-            text-decoration: none;
-        }
-        .card .contact .mail-icon{
-            width: 30px;
-            height: 20px;
-            background-image: url(./assets/icons/email_white_24dp.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        </style>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     </style>
   </head>
   <body>
-
     <section>
       <div class="card">
         <div class="back-image"></div>
@@ -197,32 +26,20 @@
         <p class="about-me">Frontend Developer</p>
         <div class="location"><p class="location--icon">Colombia</p></div>
         <div class="social-media">
-          <p>
-            <a
-              class="tw-logo"
-              target="_blank"
-              href="https://twitter.com/hecgph"
-            ></a>
-          </p>
-          <p>
-            <a
-              class="gh-logo"
-              target="_blank"
-              href="https://github.com/HectorGalindoPedraza"
-            ></a>
-          </p>
-          <p>
-            <a
-              class="li-logo"
-              target="_blank"
-              href="https://www.linkedin.com/in/hecgph"
-            ></a>
-          </p>
+          <div>
+            <a class="tw-logo" target="_blank" href="https://twitter.com/hecgph"></a>
+          </div>
+          <div>
+            <a class="gh-logo" target="_blank" href="https://github.com/HectorGalindoPedraza"></a>
+          </div>
+          <div>
+            <a class="li-logo" target="_blank" href="https://www.linkedin.com/in/hecgph"></a>
+          </div>
         </div>
         <div class="conta">
-          <a class="contact" href="mailto:hec.gph@gmail.com"
-            ><p class="mail-icon"></p
-          ></a>
+          <a class="contact" href="mailto:hec.gph@gmail.com">
+            <p class="mail-icon"></p>
+          </a>
         </div>
       </div>
     </section>
