@@ -55,10 +55,17 @@ body{
     font-weight: 100;
     color: #787A91;
 }
+.location{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    padding: 0 15px;
+}
 .location--icon{
     width: 100%;
     height: 50px;
-    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,8 +81,7 @@ body{
     background-repeat: no-repeat;
 }
 .location p{
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: inherit;
 }
 .social-media{
     width: 100%;
